@@ -82,4 +82,14 @@ document.addEventListener('DOMContentLoaded', () => {
             dropdownButton.textContent = matchingLink.textContent;
         }
     }
+
+    // Add current date below games-buttons-row
+    const currentDateElement = document.getElementById('current-date');
+    if (currentDateElement) {
+        const currentDate = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const formattedDate = currentDate.toLocaleDateString(undefined, options);
+
+        currentDateElement.textContent = formattedDate;
+    }
 });
