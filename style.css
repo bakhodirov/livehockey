@@ -1,0 +1,245 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+/* Navigation Menu Styles */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff4500;
+}
+
+/* Right Menu Styles */
+.right-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Language Switcher */
+.language-switcher {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+}
+
+.language-switcher img {
+    width: 24px;
+    margin-right: 8px;
+}
+
+.language-switcher .dropdown {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: #000;
+    border: 1px solid #444;
+    border-radius: 4px;
+    display: none;
+    flex-direction: column;
+    z-index: 10;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.language-switcher.open .dropdown {
+    display: flex;
+}
+
+.language-switcher .dropdown a {
+    color: #ddd;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.language-switcher .dropdown a:hover {
+    background-color: #ff4500;
+    color: #fff;
+}
+
+/* Profile and Search Icons */
+.profile img,
+.search img {
+    width: 28px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.profile img:hover,
+.search img:hover {
+    transform: scale(1.1);
+}
+
+/* Title Styles */
+.title {
+    font-size: 32px;
+    margin: 20px 30px;
+    text-align: left;
+    color: #000;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 30px 10px 30px;
+}
+
+/* Date Picker */
+.date-picker {
+    padding: 5px 15px;
+    font-size: 16px;
+    border: 1px solid #cbcbcb;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Timezone Dropdown */
+.timezone-dropdown {
+    position: relative;
+}
+
+.dropdown-button {
+    padding: 7px 15px;
+    font-size: 16px;
+    border: 1px solid #cbcbcb;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.timezone-dropdown.open .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #ddd;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ff4500;
+    color: #fff;
+}
+
+/* Games Buttons Row */
+.games-buttons-row {
+    display: flex;
+    justify-content: flex-start; /* Align all buttons to the left */
+    align-items: center;
+    margin: 20px 30px; /* Adjust top and side margins */
+    gap: 10px; /* Remove gaps between buttons */
+}
+
+/* Date-Game Button */
+.date-game-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #cbcbcb;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    min-width: 200px; /* Ensure uniform button size */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effects */
+.date-game-button:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Date on the Left */
+.date-game-button .date-left {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Weekday on the Right */
+.date-game-button .weekday-right {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Game Info */
+.date-game-button .game-info {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    padding-top: 20px;
+}
