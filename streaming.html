@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey Streaming</title>
+    <link rel="stylesheet" href="stylestreaming.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo-placeholder.png" alt="Hockey Logo">
+            LiveHockey
+        </div>
+
+        <nav>
+            <a href="#streaming">Streaming</a>
+            <a href="#teams">Teams</a>
+            <a href="#standings">Standings</a>
+            <a href="#stats">Stats</a>
+            <a href="#learn">Learn</a>
+        </nav>
+
+        <div class="right-menu">
+            <div class="language-switcher">
+                <img src="img/globe-placeholder.png" alt="Language">
+                <span>EN</span>
+                <div class="dropdown">
+                    <a href="#" data-lang="en">English</a>
+                    <a href="#" data-lang="es">Español</a>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="img/user-placeholder.png" alt="Profile">
+            </div>
+            <div class="search">
+                <img src="img/search-placeholder.png" alt="Search">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="streaming">
+            <h1>Watch Live</h1>
+            <div class="video-player">
+                <video controls>
+                    <source src="video-placeholder.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="button-group">
+                <button class="home-feed">Home Feed</button>
+                <button class="away-feed">Away Feed</button>
+            </div>
+        </section>
+
+        <section id="teams-stats">
+            <h2>Team Lineups & Stats</h2>
+            <div class="teams-container">
+                <div class="team-lineup">
+                    <h3>Currently on the Ice</h3>
+                    <img src="img/ice-placeholder.png" alt="Lineup Placeholder">
+                    <p>Example lineup details...</p>
+                </div>
+                <div class="team-stats">
+                    <h3>Team Stats</h3>
+                    <table>
+                        <thead>
+                            <tr><th>Stat</th><th>Value</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Power Play</td><td>30.3%</td></tr>
+                            <tr><td>Penalty Kill</td><td>83.3%</td></tr>
+                            <tr><td>Face-offs</td><td>50.7%</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="players">
+            <h2>Players to Watch</h2>
+            <div class="players-list">
+                <div class="player-card">
+                    <img src="img/player-placeholder.png" alt="Player 1">
+                    <p>Player Name</p>
+                    <p>Goals: 5</p>
+                    <p>Points: 8</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LiveHockey. All rights reserved.</p>
+    </footer>
+
+    <script src="functionsstreaming.js"></script>
+</body>
+</html>
