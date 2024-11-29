@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standings</title>
+    <link rel="stylesheet" href="stylestandings.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Hockey Logo">
+        </div>
+        <nav>
+            <a href="#streaming">Streaming</a>
+            <a href="#teams">Teams</a>
+            <a class="active" href="#standings">Standings</a>
+            <a href="#stats">Stats</a>
+            <a href="#learn-the-game">Learn The Game</a>
+        </nav>
+        <div class="right-menu">
+            <div class="language-switcher">
+                <img src="img/globe-icon.png" alt="Language">
+                <span>EN</span>
+            </div>
+            <div class="profile">
+                <img src="img/user.png" alt="Profile">
+            </div>
+            <div class="search">
+                <img src="img/search.png" alt="Search">
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <div class="page-title">
+        <h1>Standings</h1>
+        <div class="controls">
+            <select id="season">
+                <option>2024-25</option>
+                <option>2023-24</option>
+            </select>
+            <select id="date">
+                <option>Nov 22</option>
+                <option>Nov 21</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="tabs">
+        <a href="#division" class="active">Division</a>
+        <a href="#wild-card">Wild Card</a>
+        <a href="#conference">Conference</a>
+        <a href="#league">League</a>
+    </div>
+
+    <!-- Legend -->
+    <div class="legend">
+        <h3>Legend</h3>
+        <ul>
+            <li><strong>X:</strong> Clinched Playoff Spot</li>
+            <li><strong>Y:</strong> Clinched Division</li>
+            <li><strong>Z:</strong> Clinched Trophy</li>
+            <li><strong>GP:</strong> Games Played</li>
+            <li><strong>PTS:</strong> Points</li>
+            <li><strong>RW:</strong> Regulation Wins</li>
+            <li><strong>GF:</strong> Goals For</li>
+            <li><strong>GA:</strong> Goals Against</li>
+            <li><strong>DIFF:</strong> Goal Differential</li>
+        </ul>
+    </div>
+
+    <!-- Standings Tables -->
+    <div class="standings">
+        <!-- Eastern Conference -->
+        <h2>Eastern Conference</h2>
+        <h3>Atlantic</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Team</th>
+                    <th>GP</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>OT</th>
+                    <th>PTS</th>
+                    <th>P%</th>
+                    <th>RW</th>
+                    <th>ROW</th>
+                    <th>GF</th>
+                    <th>GA</th>
+                    <th>DIFF</th>
+                    <th>HOME</th>
+                    <th>AWAY</th>
+                    <th>L10</th>
+                    <th>STRK</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Toronto Maple Leafs</td>
+                    <td>20</td>
+                    <td>12</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>26</td>
+                    <td>.650</td>
+                    <td>10</td>
+                    <td>12</td>
+                    <td>61</td>
+                    <td>50</td>
+                    <td>+11</td>
+                    <td>9-3-0</td>
+                    <td>3-3-2</td>
+                    <td>7-2-1</td>
+                    <td>W3</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Florida Panthers</td>
+                    <td>20</td>
+                    <td>12</td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>25</td>
+                    <td>.625</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>70</td>
+                    <td>65</td>
+                    <td>+5</td>
+                    <td>6-3-1</td>
+                    <td>6-4-0</td>
+                    <td>4-0-0</td>
+                    <td>L2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Tampa Bay Lightning</td>
+                    <td>18</td>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>22</td>
+                    <td>.611</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>66</td>
+                    <td>55</td>
+                    <td>+11</td>
+                    <td>6-1-1</td>
+                    <td>4-5-1</td>
+                    <td>5-2-0</td>
+                    <td>OT1</td>
+                </tr>
+                <!-- Add all Atlantic teams -->
+            </tbody>
+        </table>
+
+        <h3>Metropolitan</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Team</th>
+                    <th>GP</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>OT</th>
+                    <th>PTS</th>
+                    <th>P%</th>
+                    <th>RW</th>
+                    <th>ROW</th>
+                    <th>GF</th>
+                    <th>GA</th>
+                    <th>DIFF</th>
+                    <th>HOME</th>
+                    <th>AWAY</th>
+                    <th>L10</th>
+                    <th>STRK</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Carolina Hurricanes</td>
+                    <td>19</td>
+                    <td>14</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>28</td>
+                    <td>.737</td>
+                    <td>12</td>
+                    <td>14</td>
+                    <td>74</td>
+                    <td>46</td>
+                    <td>+28</td>
+                    <td>7-1-0</td>
+                    <td>7-4-0</td>
+                    <td>7-3-0</td>
+                    <td>L1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>New Jersey Devils</td>
+                    <td>19</td>
+                    <td>13</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>27</td>
+                    <td>.686</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>76</td>
+                    <td>58</td>
+                    <td>+18</td>
+                    <td>5-3-2</td>
+                    <td>8-4-0</td>
+                    <td>5-2-1</td>
+                    <td>L2</td>
+                </tr>
+                <!-- Add all Metropolitan teams -->
+            </tbody>
+        </table>
+
+        <!-- Western Conference -->
+        <h2>Western Conference</h2>
+        <h3>Central</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Team</th>
+                    <th>GP</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>OT</th>
+                    <th>PTS</th>
+                    <th>P%</th>
+                    <th>RW</th>
+                    <th>ROW</th>
+                    <th>GF</th>
+                    <th>GA</th>
+                    <th>DIFF</th>
+                    <th>HOME</th>
+                    <th>AWAY</th>
+                    <th>L10</th>
+                    <th>STRK</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Winnipeg Jets</td>
+                    <td>20</td>
+                    <td>17</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>34</td>
+                    <td>.850</td>
+                    <td>14</td>
+                    <td>17</td>
+                    <td>84</td>
+                    <td>47</td>
+                    <td>+37</td>
+                    <td>9-1-0</td>
+                    <td>8-2-0</td>
+                    <td>8-2-0</td>
+                    <td>W2</td>
+                </tr>
+                <!-- Add all Central teams -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
