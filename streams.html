@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey Streaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="img/logo.png" alt="Hockey Logo">
+            Livehockey
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <a href="#streaming">Streaming</a>
+            <a href="profile.html">Teams</a>
+            <a href="#standings">Standings</a>
+            <a href="#stats">Stats</a>
+            <a href="#learn-the-game">Learn the Game</a>
+        </nav>
+
+        <!-- Right Menu -->
+        <div class="right-menu">
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <img src="img/globe-icon.png" alt="Language">
+                <span>EN</span>
+                <div class="dropdown">
+                    <a href="#" data-lang="en">English</a>
+                    <a href="#" data-lang="es">Español</a>
+                </div>
+            </div>
+
+            <!-- Profile -->
+            <div class="profile">
+                <img src="img/user.png" alt="Profile">
+            </div>
+
+            <!-- Search -->
+            <div class="search">
+                <img src="img/search.png" alt="Search">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="title">Streams</h1>
+        <div class="button-group">
+            <!-- Date Picker Button -->
+            <input type="date" class="date-picker">
+    
+            <!-- Timezone Dropdown -->
+            <div class="timezone-dropdown">
+                <button class="dropdown-button">Select Timezone</button>
+                <div class="dropdown-menu">
+                    <a href="#" data-tz="pst">Pacific Time (PST)</a>
+                    <a href="#" data-tz="est">Eastern Time (EST)</a>
+                    <a href="#" data-tz="gmt">Greenwich Mean Time (GMT)</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Games Buttons Row -->
+        <div class="games-buttons-row">
+            <button class="date-game-button">
+                <div class="date-left">Nov 26</div>
+                <div class="weekday-right">Sunday</div>
+                <div class="game-info">2 games</div>
+            </button>
+            <button class="date-game-button">
+                <div class="date-left">Nov 27</div>
+                <div class="weekday-right">Monday</div>
+                <div class="game-info">3 games</div>
+            </button>
+            <button class="date-game-button">
+                <div class="date-left">Nov 28</div>
+                <div class="weekday-right">Tuesday</div>
+                <div class="game-info">1 game</div>
+            </button>
+            <button class="date-game-button">
+                <div class="date-left">Nov 29</div>
+                <div class="weekday-right">Wednesday</div>
+                <div class="game-info">4 games</div>
+            </button>
+            <button class="date-game-button">
+                <div class="date-left">Nov 30</div>
+                <div class="weekday-right">Thursday</div>
+                <div class="game-info">2 games</div>
+            </button>
+        </div>
+		
+	<h1 class="title" id="current-date"></h1>
+	
+	<div class="games-container">
+    <div class="games-row">
+        <!-- Example game card -->
+        <div class="game-card">
+            <div class="game-time">1:00 PM EST</div>
+            <div class="teams">
+                <div class="team">
+                    <img src="img/rangers.png" alt="Rangers">
+                    <span>Rangers</span>
+                    <span>12-6-1</span>
+                </div>
+                <div class="team">
+                    <img src="img/flyers.png" alt="Flyers">
+                    <span>Flyers</span>
+                    <span>9-10-2</span>
+                </div>
+            </div>
+            <div class="team-leaders">
+                <div class="leader">
+                    <img src="img/atremi.png" alt="Artemi Panarin">
+                    <div>
+                        <span>Artemi Panarin</span>
+                        <span>12 Goals</span>
+                    </div>
+                </div>
+                <div class="leader">
+                    <img src="img/travis.png" alt="Travis Konecny">
+                    <div>
+                        <span>Travis Konecny</span>
+                        <span>12 Goals</span>
+                    </div>
+                </div>
+            </div>
+            <div class="game-actions">
+                <button class="home-feed">Home Feed</button>
+                <button class="away-feed">Away Feed</button>
+            </div>
+        </div>
+        <!-- Repeat more cards -->
+        <div class="game-card">
+            <div class="game-time">1:00 PM EST</div>
+            <div class="teams">
+                <div class="team">
+                    <img src="img/rangers.png" alt="Rangers">
+                    <span>Rangers</span>
+                    <span>12-6-1</span>
+                </div>
+                <div class="team">
+                    <img src="img/flyers.png" alt="Flyers">
+                    <span>Flyers</span>
+                    <span>9-10-2</span>
+                </div>
+            </div>
+            <div class="team-leaders">
+                <div class="leader">
+                    <img src="img/atremi.png" alt="Artemi Panarin">
+                    <div>
+                        <span>Artemi Panarin</span>
+                        <span>12 Goals</span>
+                    </div>
+                </div>
+                <div class="leader">
+                    <img src="img/travis.png" alt="Travis Konecny">
+                    <div>
+                        <span>Travis Konecny</span>
+                        <span>12 Goals</span>
+                    </div>
+                </div>
+            </div>
+            <div class="game-actions">
+                <button class="home-feed">Home Feed</button>
+                <button class="away-feed">Away Feed</button>
+            </div>
+        </div>
+		
+        <div class="game-card">
+            <div class="game-time">1:00 PM EST</div>
+            <div class="teams">
+                <div class="team">
+                    <img src="img/rangers.png" alt="Rangers">
+                    <span>Rangers</span>
+                    <span>12-6-1</span>
+                </div>
+                <div class="team">
+                    <img src="img/flyers.png" alt="Flyers">
+                    <span>Flyers</span>
+                    <span>9-10-2</span>
+                </div>
+            </div>
+            <div class="team-leaders">
+                <div class="leader">
+                    <img src="img/atremi.png" alt="Artemi Panarin">
+                    <div>
+                        <span>Artemi Panarin</span>
+                        <span>12 Goals</span>
+                    </div>
+                </div>
+                <div class="leader">
+                    <img src="img/travis.png" alt="Travis Konecny">
+                    <div>
+                        <span>Travis Konecny</span>
+                        <span>12 Goals</span>
+                    </div>
+                </div>
+            </div>
+            <div class="game-actions">
+                <button class="home-feed">Home Feed</button>
+                <button class="away-feed">Away Feed</button>
+            </div>
+        </div>
+		
+        <div class="game-card">
+            <div class="game-time">1:00 PM EST</div>
+            <div class="teams">
+                <div class="team">
+                    <img src="img/rangers.png" alt="Rangers">
+                    <span>Rangers</span>
+                    <span>12-6-1</span>
+                </div>
+                <div class="team">
+                    <img src="img/flyers.png" alt="Flyers">
+                    <span>Flyers</span>
+                    <span>9-10-2</span>
+                </div>
+            </div>
+            <div class="team-leaders">
+                <div class="leader">
+                    <img src="img/atremi.png" alt="Artemi Panarin">
+                    <div>
+                        <span>Artemi Panarin</span>
+                        <span>12 Goals</span>
+                    </div>
+                </div>
+                <div class="leader">
+                    <img src="img/travis.png" alt="Travis Konecny">
+                    <div>
+                        <span>Travis Konecny</span>
+                        <span>12 Goals</span>
+                    </div>
+                </div>
+            </div>
+            <div class="game-actions">
+                <button class="home-feed">Home Feed</button>
+                <button class="away-feed">Away Feed</button>
+            </div>
+        </div>
+		
+        <div class="game-card">
+            <div class="game-time">1:00 PM EST</div>
+            <div class="teams">
+                <div class="team">
+                    <img src="img/rangers.png" alt="Rangers">
+                    <span>Rangers</span>
+                    <span>12-6-1</span>
+                </div>
+                <div class="team">
+                    <img src="img/flyers.png" alt="Flyers">
+                    <span>Flyers</span>
+                    <span>9-10-2</span>
+                </div>
+            </div>
+            <div class="team-leaders">
+                <div class="leader">
+                    <img src="img/atremi.png" alt="Artemi Panarin">
+                    <div>
+                        <span>Artemi Panarin</span>
+                        <span>12 Goals</span>
+                    </div>
+                </div>
+                <div class="leader">
+                    <img src="img/travis.png" alt="Travis Konecny">
+                    <div>
+                        <span>Travis Konecny</span>
+                        <span>12 Goals</span>
+                    </div>
+                </div>
+            </div>
+            <div class="game-actions">
+                <button class="home-feed">Home Feed</button>
+                <button class="away-feed">Away Feed</button>
+            </div>
+        </div>
+		
+        <div class="game-card">
+            <div class="game-time">1:00 PM EST</div>
+            <div class="teams">
+                <div class="team">
+                    <img src="img/rangers.png" alt="Rangers">
+                    <span>Rangers</span>
+                    <span>12-6-1</span>
+                </div>
+                <div class="team">
+                    <img src="img/flyers.png" alt="Flyers">
+                    <span>Flyers</span>
+                    <span>9-10-2</span>
+                </div>
+            </div>
+            <div class="team-leaders">
+                <div class="leader">
+                    <img src="img/atremi.png" alt="Artemi Panarin">
+                    <div>
+                        <span>Artemi Panarin</span>
+                        <span>12 Goals</span>
+                    </div>
+                </div>
+                <div class="leader">
+                    <img src="img/travis.png" alt="Travis Konecny">
+                    <div>
+                        <span>Travis Konecny</span>
+                        <span>12 Goals</span>
+                    </div>
+                </div>
+            </div>
+            <div class="game-actions">
+                <button class="home-feed">Home Feed</button>
+                <button class="away-feed">Away Feed</button>
+            </div>
+        </div>
+		
+        <div class="game-card">
+            <div class="game-time">1:00 PM EST</div>
+            <div class="teams">
+                <div class="team">
+                    <img src="img/rangers.png" alt="Rangers">
+                    <span>Rangers</span>
+                    <span>12-6-1</span>
+                </div>
+                <div class="team">
+                    <img src="img/flyers.png" alt="Flyers">
+                    <span>Flyers</span>
+                    <span>9-10-2</span>
+                </div>
+            </div>
+            <div class="team-leaders">
+                <div class="leader">
+                    <img src="img/atremi.png" alt="Artemi Panarin">
+                    <div>
+                        <span>Artemi Panarin</span>
+                        <span>12 Goals</span>
+                    </div>
+                </div>
+                <div class="leader">
+                    <img src="img/travis.png" alt="Travis Konecny">
+                    <div>
+                        <span>Travis Konecny</span>
+                        <span>12 Goals</span>
+                    </div>
+                </div>
+            </div>
+            <div class="game-actions">
+                <button class="home-feed">Home Feed</button>
+                <button class="away-feed">Away Feed</button>
+            </div>
+        </div>
+		
+        <div class="game-card">
+            <div class="game-time">1:00 PM EST</div>
+            <div class="teams">
+                <div class="team">
+                    <img src="img/rangers.png" alt="Rangers">
+                    <span>Rangers</span>
+                    <span>12-6-1</span>
+                </div>
+                <div class="team">
+                    <img src="img/flyers.png" alt="Flyers">
+                    <span>Flyers</span>
+                    <span>9-10-2</span>
+                </div>
+            </div>
+            <div class="team-leaders">
+                <div class="leader">
+                    <img src="img/atremi.png" alt="Artemi Panarin">
+                    <div>
+                        <span>Artemi Panarin</span>
+                        <span>12 Goals</span>
+                    </div>
+                </div>
+                <div class="leader">
+                    <img src="img/travis.png" alt="Travis Konecny">
+                    <div>
+                        <span>Travis Konecny</span>
+                        <span>12 Goals</span>
+                    </div>
+                </div>
+            </div>
+            <div class="game-actions">
+                <button class="home-feed">Home Feed</button>
+                <button class="away-feed">Away Feed</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+	
+	
+    </main>    
+    
+    <script src="functions.js"></script>
+</body>
+</html>
