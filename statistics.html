@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey Streaming</title>
+    <link rel="stylesheet" href="statistics.css">
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="img/logo.png" alt="Hockey Logo">
+            Livehockey
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <a href="#streaming">Streaming</a>
+            <a href="profile.html">Teams</a>
+            <a href="#standings">Standings</a>
+            <a href="#stats">Stats</a>
+            <a href="#learn-the-game">Learn the Game</a>
+        </nav>
+
+        <!-- Right Menu -->
+        <div class="right-menu">
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <img src="img/globe-icon.png" alt="Language">
+                <span>EN</span>
+                <div class="dropdown">
+                    <a href="#" data-lang="en">English</a>
+                    <a href="#" data-lang="es">Español</a>
+                </div>
+            </div>
+
+            <!-- Profile -->
+            <div class="profile">
+                <img src="img/user.png" alt="Profile">
+            </div>
+
+            <!-- Search -->
+            <div class="search">
+                <img src="img/search.png" alt="Search">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="title">Statistics</h1>
+        <div class="button-group">
+            <!-- Date Picker Button -->
+            <input type="date" class="date-picker">
+    
+            <!-- Season Dropdown -->
+            <div class="timezone-dropdown">
+                <button class="dropdown-button">Regular season</button>
+                <div class="dropdown-menu">
+                    <a href="#" data-tz="pst">Pacific Time (PST)</a>
+                    <a href="#" data-tz="est">Eastern Time (EST)</a>
+                    <a href="#" data-tz="gmt">Greenwich Mean Time (GMT)</a>
+                </div>
+            </div>
+
+            <!-- Franchises Dropdown -->
+            <div class="timezone-dropdown">
+                <button class="dropdown-button">All Franchises</button>
+                <div class="dropdown-menu">
+                    <a href="#" data-tz="pst">Pacific Time (PST)</a>
+                    <a href="#" data-tz="est">Eastern Time (EST)</a>
+                    <a href="#" data-tz="gmt">Greenwich Mean Time (GMT)</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="players-container">
+            <div class="player_one">
+                <div class="player-info-one">
+                    <img src="img/kiril-kaprizov.png" alt="Kiril Kaprizov">
+                    <h1 class="player-one-title">Kiril Kaprizov</h1>
+                    <p class="team-position">MIN / #97 / L</p>
+
+                    <h2 class="point-titile">POINTS</h2>
+                    <p class="big-point">34</p>
+                </div>
+
+                <div class="player-info-two">
+                    <div class="leaderboard">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Player</th>
+                                    <th>Points</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>Nathan MacKinnon</td>
+                                    <td>35</td>
+                                </tr>
+                                <tr class="highlight">
+                                    <td>2.</td>
+                                    <td>Kiril Kaprizov</td>
+                                    <td>34</td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td>Martin Necas</td>
+                                    <td>33</td>
+                                </tr>
+                                <tr>
+                                    <td>T4.</td>
+                                    <td>Mikko Rantanen</td>
+                                    <td>32</td>
+                                </tr>
+                                <tr>
+                                    <td>T4.</td>
+                                    <td>Jack Eichel</td>
+                                    <td>32</td>
+                                </tr>
+                                <tr>
+                                    <td>6.</td>
+                                    <td>Sam Reinhart</td>
+                                    <td>31</td>
+                                </tr>
+                                <tr>
+                                    <td>T7.</td>
+                                    <td>Nathan MacKinnon</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>T7.</td>
+                                    <td>Leon Draisaitl</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>9.</td>
+                                    <td>Nikita Kucherov</td>
+                                    <td>29</td>
+                                </tr>
+                                <tr>
+                                    <td>10.</td>
+                                    <td>Connor McDavid</td>
+                                    <td>28</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="all-leaders">All leaders</a>
+                    </div>                    
+                </div>   
+            </div>
+            <div class="player_two">
+                <div class="player-info-one">
+                    <img src="img/connor-holleybuck.png" alt="Connor Hellebuyck">
+                    <h1 class="player-one-title">Connor Hellebuyck</h1>
+                    <p class="team-position">WPG / #37 / G</p>
+
+                    <h2 class="point-titile">POINTS</h2>
+                    <p class="big-point">2.13</p>
+                </div>
+
+                <div class="player-info-two">
+                    <div class="leaderboard">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Player</th>
+                                    <th>Points</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="highlight">
+                                    <td>1.</td>
+                                    <td>Connor Hellebuyck</td>
+                                    <td>2.2</td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td>Filip Gustavsson</td>
+                                    <td>34</td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td>Anthony Stolarz</td>
+                                    <td>33</td>
+                                </tr>
+                                <tr>
+                                    <td>T4.</td>
+                                    <td>Karel Vejmelka</td>
+                                    <td>32</td>
+                                </tr>
+                                <tr>
+                                    <td>T4.</td>
+                                    <td>Jake Oettinger</td>
+                                    <td>32</td>
+                                </tr>
+                                <tr>
+                                    <td>6.</td>
+                                    <td>David Rittich</td>
+                                    <td>31</td>
+                                </tr>
+                                <tr>
+                                    <td>T7.</td>
+                                    <td>Andrei Vasilevskiy</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>T7.</td>
+                                    <td>Jake Allen</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>9.</td>
+                                    <td>Joey Daccord</td>
+                                    <td>29</td>
+                                </tr>
+                                <tr>
+                                    <td>10.</td>
+                                    <td>Dustin Wolf</td>
+                                    <td>28</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="all-leaders">All leaders</a>
+                    </div>                                      
+                </div>   
+            </div>
+        </div>   
+        
+        <div class="players-container">
+            <div class="player_one">
+                <div class="player-info-one">
+                    <img src="img/calemakar.png" alt="Cale Makar">
+                    <h1 class="player-one-title">Cale Makar</h1>
+                    <p class="team-position">COL / #8 / D</p>
+
+                    <h2 class="point-titile">POINTS</h2>
+                    <p class="big-point">30</p>
+                </div>
+
+                <div class="player-info-two">
+                    <div class="leaderboard">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Player</th>
+                                    <th>Points</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="highlight">
+                                    <td>1.</td>
+                                    <td>Cale Makar</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>T2.</td>
+                                    <td>Zack Werenski</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td>T2.</td>
+                                    <td>Josh Morrissey</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td>T4.</td>
+                                    <td>Quinn Hughes</td>
+                                    <td>19</td>
+                                </tr>
+                                <tr>
+                                    <td>T4.</td>
+                                    <td>Rasmus Dahlin</td>
+                                    <td>19</td>
+                                </tr>
+                                <tr>
+                                    <td>6.</td>
+                                    <td>Victor Hedman</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>T7.</td>
+                                    <td>Adam Fox</td>
+                                    <td>17</td>
+                                </tr>
+                                <tr>
+                                    <td>T7.</td>
+                                    <td>Neal Pionk</td>
+                                    <td>17</td>
+                                </tr>
+                                <tr>
+                                    <td>T7.</td>
+                                    <td>Dougie Hamilton</td>
+                                    <td>17</td>
+                                </tr>
+                                <tr>
+                                    <td>10.</td>
+                                    <td>Shea Theodore</td>
+                                    <td>16</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="all-leaders">All leaders</a>
+                    </div>                                      
+                </div>   
+            </div>
+            <div class="player_two">
+                <div class="player-info-one">
+                    <img src="img/matvei-michkov.png" alt="Kiril Kaprizov">
+                    <h1 class="player-one-title">Matvei Michkov</h1>
+                    <p class="team-position">PHI / #39 / R</p>
+
+                    <h2 class="point-titile">POINTS</h2>
+                    <p class="big-point">16</p>
+                </div>
+
+                <div class="player-info-two">
+                    <div class="leaderboard">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Player</th>
+                                    <th>Points</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="highlight">
+                                    <td>1.</td>
+                                    <td>Matvei Michkov</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td>Logan Stankoven</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>T3.</td>
+                                    <td>Lane Hutson</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>T3.</td>
+                                    <td>Maxim Tsyplakov</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>T5.</td>
+                                    <td>Cutter Gauthier</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>T5.</td>
+                                    <td>Jackson Blake</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>T7.</td>
+                                    <td>Macklin Celebrini</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>T7.</td>
+                                    <td>Mackie Samoskevich</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>T7.</td>
+                                    <td>Nikolai Kovalenko</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>10.</td>
+                                    <td>Cole Schwindt</td>
+                                    <td>6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="all-leaders">All leaders</a>
+                    </div>                                      
+                </div>   
+            </div>
+        </div>  
+	
+    </main>    
+
+    <script src="statistics_functions.js"></script>
+</body>
+</html>

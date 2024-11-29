@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+/* Navigation Menu Styles */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff4500;
+}
+
+/* Right Menu Styles */
+.right-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Language Switcher */
+.language-switcher {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+}
+
+.language-switcher img {
+    width: 24px;
+    margin-right: 8px;
+}
+
+.language-switcher .dropdown {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: #000;
+    border: 1px solid #444;
+    border-radius: 4px;
+    display: none;
+    flex-direction: column;
+    z-index: 10;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.language-switcher.open .dropdown {
+    display: flex;
+}
+
+.language-switcher .dropdown a {
+    color: #ddd;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.language-switcher .dropdown a:hover {
+    background-color: #ff4500;
+    color: #fff;
+}
+
+/* Profile and Search Icons */
+.profile img,
+.search img {
+    width: 28px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.profile img:hover,
+.search img:hover {
+    transform: scale(1.1);
+}
+
+/* Title Styles */
+.title {
+    font-size: 32px;
+    margin: 20px 30px;
+    text-align: left;
+    color: #000;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 30px 10px 30px;
+}
+
+/* Date Picker */
+.date-picker {
+    padding: 5px 15px;
+    font-size: 16px;
+    border: 1px solid #cbcbcb;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Timezone Dropdown */
+.timezone-dropdown {
+    position: relative;
+}
+
+.dropdown-button {
+    padding: 7px 15px;
+    font-size: 16px;
+    border: 1px solid #cbcbcb;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.timezone-dropdown.open .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #ddd;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ff4500;
+    color: #fff;
+}
+
+/* Players section */
+.players-container {
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+}
+
+.player_one,
+.player_two {
+    display: flex;
+    justify-content: space-between;
+    flex: 1; 
+    padding: 10px; 
+    box-sizing: border-box;
+    border: solid 1px #e6e6e6;
+}
+
+.player-one-title {
+    color: #000;
+    font-size: 15px;
+}
+
+.team-position {
+    color: #000;
+    font-size: 10px;
+}
+
+.point-titile {
+    padding-top: 20px;
+    color: #5E5E5E;
+    font-size: 20px;
+    font-weight: 100px;
+}
+
+.big-point {
+    font-size: 50px;
+    color: #000;
+    font-weight: bold;
+}
+
+.leaderboard {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 400px;
+    border-collapse: collapse;
+    text-align: left;
+    color: black; /* Set table text color to black */
+}
+
+thead th {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black; /* Ensure header text is also black */
+    padding: 10px 5px;
+    border-bottom: 2px solid #ddd;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+tbody td {
+    padding: 10px 5px;
+    color: black; /* Ensure row text is black */
+}
+
+.highlight {
+    background-color: #e0ecff;
+}
+
+.highlight td {
+    font-weight: bold;
+}
+
+.highlight td:nth-child(1),
+.highlight td:nth-child(3) {
+    color: white;
+    background-color: #005eff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.all-leaders {
+    display: block;
+    text-align: right;
+    color: #005eff;
+    font-size: 14px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.all-leaders:hover {
+    text-decoration: underline;
+}
+
+.player-info-one {
+    width: 50%;
+}
