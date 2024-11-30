@@ -1,0 +1,701 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+/* Navigation Menu Styles */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff4500;
+}
+
+/* Right Menu Styles */
+.right-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Language Switcher */
+.language-switcher {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+}
+
+.language-switcher img {
+    width: 24px;
+    margin-right: 8px;
+}
+
+.language-switcher .dropdown {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: #000;
+    border: 1px solid #444;
+    border-radius: 4px;
+    display: none;
+    flex-direction: column;
+    z-index: 10;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.language-switcher.open .dropdown {
+    display: flex;
+}
+
+.language-switcher .dropdown a {
+    color: #ddd;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.language-switcher .dropdown a:hover {
+    background-color: #ff4500;
+    color: #fff;
+}
+
+/* Main Columns Layout */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Default column layout */
+    align-items: center;
+    gap: 20px;
+}
+
+/* Buttons Row */
+.button-row {
+    display: flex;
+    flex-direction: row; /* Make buttons horizontal */
+    gap: 20px; /* Add space between buttons */
+    justify-content: flex-start; /* Align buttons to the start */
+    width: 100%;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #2755CD;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #000;
+}
+
+/* Video Player */
+.video-player {
+    width: 100%; /* Make video responsive */
+    max-width: 600px; /* Limit maximum width */
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px; /* Spacing below buttons */
+}
+
+/* Logos and VS Section */
+.teams {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Space between teams and VS */
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.team img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.team-info span {
+    font-size: 14px;
+    color: #666;
+}
+
+.team-info strong {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.team-info small {
+    font-size: 12px;
+    color: #666;
+}
+
+.vs {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Currently on the Ice Section */
+.on-ice {
+    margin-top: 30px; /* Add spacing from the teams section */
+    text-align: center;
+}
+
+.on-ice h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Space between players */
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.player img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Make image circular */
+    background-color: #ddd; /* Fallback for missing image */
+    margin-bottom: 10px;
+}
+
+.player-info span {
+    font-size: 14px;
+    color: #666;
+}
+
+.player-info strong {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.player-info small {
+    font-size: 12px;
+    color: #666;
+}
+
+/* On-Ice Map Section */
+.on-ice-map {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.ice-map {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px; /* Space between the map and player lists */
+    border: 1px solid #ddd; /* Optional border for aesthetics */
+    border-radius: 10px; /* Rounded edges for a polished look */
+}
+
+.player-lists {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* Space between the two team lists */
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.team-players ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.team-players li {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #000;
+}
+
+/* Players to Watch Section */
+.players-to-watch {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    /* border: 1px solid #ddd; */
+    /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
+    margin-top: 40px; /* Space from existing content */
+}
+
+.players-to-watch h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.players-to-watch small {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.teams-watch .team-logos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.teams-watch .team-logos img {
+    width: 50px;
+    height: auto;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+.stat-row:first-child {
+    border-top: none;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.player img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd; /* Placeholder for missing images */
+}
+
+.player div span {
+    font-size: 12px;
+    color: #666;
+}
+
+.player div strong {
+    font-size: 14px;
+    color: #000;
+    display: block;
+}
+
+.player div small {
+    font-size: 12px;
+    color: #666;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.stats strong {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d00000;
+}
+
+.stats span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}
+
+/* Team Stats Section */
+.team-stats {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    /* border: 1px solid #ddd; */
+    margin-top: 40px;
+}
+
+.team-stats h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stats-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.stats-header img {
+    width: 40px;
+    height: auto;
+}
+
+.stats-header span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+.stats-row:first-child {
+    border-top: none;
+}
+
+.team-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.team-stat strong {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d00000;
+    margin-bottom: 5px;
+}
+
+.team-stat small {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.team-stat span {
+    font-size: 12px;
+    color: #666;
+}
+
+.divider {
+    width: 10%;
+    height: 2px;
+    background-color: #d00000;
+    border-radius: 1px;
+}
+
+/* New Row */
+.new-row {
+    display: flex; /* Flexbox layout for horizontal alignment */
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+    gap: 20px; /* Space between columns */
+    margin-top: 40px; /* Adds space above the row */
+}
+
+/* Columns within New Row */
+.new-row .column {
+    flex: 1; /* Ensures both columns take equal space */
+    max-width: 50%; /* Limits each column to half the width */
+    box-sizing: border-box; /* Includes padding and border in the width */
+}
+
+/* Prevent Overlap by Enforcing Flex Constraints */
+.players-to-watch,
+.team-stats {
+    width: 100%;
+}
+
+/* Roster Section */
+.roster-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.roster-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Team Buttons */
+.team-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.team-button {
+    border: 1px solid #000;
+    padding: 8px 20px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.team-button.active {
+    background-color: #000;
+    color: #fff;
+}
+
+.team-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Roster Section */
+.roster-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    color: #000; /* Set default text color to black */
+}
+
+.roster-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000; /* Ensure the heading is black */
+}
+
+/* Team Buttons */
+.team-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.team-button {
+    border: 1px solid #000;
+    padding: 8px 20px;
+    background-color: #fff;
+    color: #000; /* Set button text to black */
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.team-button.active {
+    background-color: #000;
+    color: #fff; /* Active button has white text */
+}
+
+.team-button:hover {
+    background-color: #000;
+    color: #fff; /* Hover button has white text */
+}
+
+/* Custom Row */
+.row.custom-row {
+    display: flex; /* Flexbox layout for horizontal alignment */
+    justify-content: space-between; /* Add space between columns */
+    gap: 20px; /* Space between columns */
+    align-items: flex-start; /* Align items to the top */
+    margin-top: 20px; /* Add spacing above the row */
+}
+
+/* Columns within Custom Row */
+.col.custom-col-1,
+.col.custom-col-2 {
+    flex: 1; /* Ensure equal column widths */
+    max-width: 50%; /* Limit each column to half the container width */
+    box-sizing: border-box; /* Include padding and borders in width calculation */
+}
+
+/* Optional Styling for Column Content */
+.custom-col-1 h3,
+.custom-col-2 h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.custom-col-1 p,
+.custom-col-2 p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000; /* Black text for consistency */
+}
+
+/* Table Styles */
+.roster-section .roster-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000;
+}
+
+.roster-table th,
+.roster-table td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+}
+
+.roster-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Season Series Section */
+.season-series {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.season-series .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.season-series .header h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.season-series .header span {
+    font-size: 16px;
+    color: #666;
+    font-weight: bold;
+}
+
+.season-series .games {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-card .team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.game-card .team img {
+    width: 30px;
+    height: 30px;
+}
+
+.game-card .team strong {
+    font-size: 14px;
+    color: #000;
+    margin-left: 5px;
+}
+
+.game-card .team span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.game-card .team span.faded {
+    color: #999;
+}
+
+.game-card .game-info {
+    font-size: 12px;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
